@@ -22,7 +22,11 @@ app.get("/", function(req, res) {
 
 app.get("/api/timestamp/:date_string?", (req, res) => {
 	if (req.params.date_string) {
-		const date = new Date(parseInt(req.params.date_string));
+		const date = new Date(
+			parseInt(req.params.date_string) == req.params.date_string
+				? parseInt(req.params.date_string)
+				: req.params.date_string
+		);
 		if (isValidDate(date)) {
 			res.json({ unix: date.getTime(), utc: date.toUTCString() });
 		} else {
