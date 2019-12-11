@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Sulphur+Point:400,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background: url(https://wallpapercave.com/wp/KJApajb.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #f4f4f4;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+h1 {
+  background-color: #222;
+  border: 3px solid #fff;
+  margin: 0.5rem auto;
+  width: 50%;
+}
+
+code {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+  text-align: right !important;
+}
+/*# sourceMappingURL=style.css.map */
